@@ -276,3 +276,130 @@ header img {
   color: #9b041f;
   text-shadow: 0 0 8px rgba(217,4,41,0.6);
 }
+
+
+/* ===================== Responsive ===================== */
+
+/* الشاشات الصغيرة (موبايل) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 5%;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .heroimg {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .central {
+    font-size: 20px;
+  }
+
+  .herobtns {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contanier ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contanier ul img {
+    width: 120px;
+  }
+
+  .house {
+    font-size: 28px;
+    margin: 20px 0;
+  }
+
+  .Supplies {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card img {
+    width: 80px;
+  }
+
+  .aboutme,
+  .abouttitle {
+    font-size: 22px;
+  }
+
+  .emailandphone {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+}
+
+/* الشاشات المتوسطة (تابلت) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 15px 6%;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 6%;
+  }
+
+  .heroimg {
+    width: 350px;
+    margin-top: 25px;
+  }
+
+  .name {
+    font-size: 34px;
+  }
+
+  .central {
+    font-size: 24px;
+  }
+
+  .herobtns {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contanier ul {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .contanier ul img {
+    width: 130px;
+  }
+
+  .Supplies {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+}
