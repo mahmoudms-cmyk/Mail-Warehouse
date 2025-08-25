@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mail - Outword</title>
+  <link rel="stylesheet" href="outword.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Hi: Mohamed</h3>
+      <button class="btn sidebar-btn active">Mail Inword - Outword</button>
+      <button class="btn sidebar-btn">Add Users</button>
+      <button class="btn sidebar-btn">Add Dept, Mng</button>
+<button onclick="window.location.href='centralmail.html#Central Mail'" class="btn sidebar-btn danger">main page</button>
+
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <h1>Mail - Outword</h1>
+
+      <form class="form-grid">
+        <div class="form-group">
+          <label for="from">From</label>
+          <input type="text" id="from" placeholder="Sender department">
+        </div>
+
+        <div class="form-group">
+          <label for="to">To</label>
+          <input type="text" id="to" placeholder="Recipient name">
+        </div>
+
+        <div class="form-group">
+          <label for="by">By</label>
+          <input type="text" id="by" placeholder="Courier / Post">
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" id="description" placeholder="Description of mail">
+        </div>
+
+        <div class="form-group">
+          <label for="ref">onebank ref</label>
+          <input type="text" id="ref" placeholder="Reference number">
+        </div>
+
+        <div class="form-group">
+          <label for="status">Status</label>
+          <input type="text" id="status" placeholder="Sent / Delivered">
+        </div>
+
+        <div class="form-group">
+          <label for="attach">Attach</label>
+          <input type="text" id="attach" placeholder="Attachment link">
+        </div>
+        <div class="form-group">
+          <label for="attach">By Code</label>
+          <input type="text" id="attach" placeholder="Attachment link">
+        </div>
+      </form>
+
+      <!-- Action buttons -->
+      <div class="actions">
+        <button class="btn success">Add</button>
+        <button class="btn warning">Edit</button>
+        <button class="btn primary">Save</button>
+        <button class="btn danger">Cancel</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

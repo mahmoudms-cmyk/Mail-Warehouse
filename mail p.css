@@ -1,0 +1,19 @@
+body {
+  background-color: #e9ecef;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #1b2430;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h5 {
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-weight: bold;
+}

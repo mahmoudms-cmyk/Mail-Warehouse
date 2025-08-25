@@ -1,0 +1,278 @@
+/* ===== Reset بسيط ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Body عام ===== */
+body {
+  background: #f9fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Header & Nav ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header img {
+  height: 50px;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navigation a, .navigation button {
+  text-decoration: none;
+  font-weight: 500;
+  color: #444;
+  transition: 0.3s;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.navigation a:hover,
+.navigation button:hover {
+  color: #e63946;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 8%;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.heroimg {
+  width: 420px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.name {
+  font-size: 40px;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.central {
+  font-size: 28px;
+  color: #555;
+  margin: 10px 0 20px;
+}
+
+.herobtns {
+  display: flex;
+  gap: 20px;
+}
+
+.herobtns a {
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.herobtns .maill {
+  background: #e63946;
+  color: #fff;
+}
+
+.herobtns .maill:hover {
+  background: #c92d3d;
+}
+
+.herobtns .ware {
+  background: #444;
+  color: #fff;
+}
+
+.herobtns .ware:hover {
+  background: #222;
+}
+
+/* ===== Central Mail Section ===== */
+.central-mail span {
+  font-size: 35px;
+  font-weight: bold;
+  color: #444;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.central-mail span:hover {
+  color: #e63946;
+  transform: scale(1.2);
+}
+
+.contanier ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+  list-style: none;
+}
+
+.contanier ul li {
+  text-align: center;
+}
+
+.contanier ul img {
+  width: 150px;
+  transition: 0.4s;
+}
+
+.contanier ul img:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.caption {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* ===== Warehouse Section ===== */
+.house {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+  color: #e63946;
+}
+
+.Supplies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 0 8% 60px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  text-align: center;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+/* ===== Contact Section ===== */
+.contactcont {
+  background: #f1f1f1;
+  padding: 50px 8%;
+  text-align: center;
+}
+
+.contanttitle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.aboutme {
+  font-size: 30px;
+  color: #e63946;
+  font-weight: bold;
+}
+
+.abouttitle {
+  font-size: 30px;
+  color: #444;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap; /* عشان لو الشاشة صغيرة ينزلوا تحت بعض */
+}
+
+.emailandphone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  color: #333;
+  background: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.emailandphone:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.emailandphone img {
+  width: 26px;
+}
+
+.emailandphone a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.emailandphone a:hover {
+  color: #304184;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px 0;
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.footer span {
+  color: #d90429; /* اللون المميز */
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.footer span:hover {
+  color: #9b041f;
+  text-shadow: 0 0 8px rgba(217,4,41,0.6);
+}

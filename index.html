@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAIL APP - Login</title>
+  <link rel="stylesheet" href="sign in.css"> <!-- رابط ملف CSS -->
+</head>
+<body>
+  <header>
+    <h1>one:bank</h1>
+    <h2>Central Mail & Warehouse</h2>
+  </header>
+
+  <main>
+    <div class="login-box">
+      <h2>Sign in</h2>
+      <form id="loginForm">
+        <input type="text" id="username" required placeholder="User Name">
+        <input type="text" id="userid" required placeholder="User ID">
+        <button type="submit">Sign in</button>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // يمنع التحويل التلقائي
+
+      let username = document.getElementById("username").value.trim();
+      let userid = document.getElementById("userid").value.trim();
+
+      // بيانات الدخول الصح
+      if(username === "Mohamed Sadeik" && userid === "e431") {
+        window.location.href = "centralmail.html"; // يفتح الصفحة
+      } else {
+        alert(" User Name أو User ID is wrong");
+      }
+    });
+  </script>
+</body>
+</html>

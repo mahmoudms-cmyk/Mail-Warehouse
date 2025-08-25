@@ -1,0 +1,99 @@
+/* Layout */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e9ecef;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #1f2937;
+  color: #fff;
+  padding: 20px;
+  width: 250px;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.sidebar .btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sidebar-btn {
+  background: #4b5563;
+  color: #fff;
+}
+
+.sidebar-btn.active {
+  background: #f59e0b;
+}
+
+.sidebar-btn.danger {
+  background: #ef4444;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.actions {
+  margin-top: 20px;
+}
+
+.actions .btn {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.success { background: #22c55e; }
+.warning { background: #f59e0b; }
+.primary { background: #3b82f6; }
+.danger { background: #ef4444; }
