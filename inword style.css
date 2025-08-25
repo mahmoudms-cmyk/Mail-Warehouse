@@ -97,3 +97,40 @@ body {
 .warning { background: #f59e0b; }
 .primary { background: #3b82f6; }
 .danger { background: #ef4444; }
+
+
+
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sidebar .btn {
+    width: auto;
+    margin: 5px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* شاشات أقل من 576px (موبايل صغير) */
+@media (max-width: 576px) {
+  .main-content {
+    padding: 15px;
+  }
+
+  .actions .btn {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
